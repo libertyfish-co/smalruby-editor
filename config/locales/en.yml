@@ -13,6 +13,7 @@ en:
       not_ruby_program: " isn't ruby program."
       not_exist: " does not exist."
       exist: " already exist."
+      upload_failed: " is failed to upload."
 
   toolbox_names:
     default: "Normal"
@@ -39,6 +40,7 @@ en:
       msg_input_program_name: "Input your program name(ex:01.rb)"
       menu: "Menu"
       run: "Run"
+      upload: "Upload"
       download: "Download"
       load: "Load"
       save: "Save"

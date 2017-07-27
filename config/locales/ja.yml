@@ -13,6 +13,7 @@ ja:
       not_ruby_program: "はRubyのプログラムではありません"
       not_exist: "はありません"
       exist: "すでに同じ名前のプログラムがあります"
+      upload_failed: "をアップロードできませんでした"
 
   toolbox_names:
     default: "通常"
@@ -40,6 +41,7 @@ ja:
       msg_input_program_name: "プログラムの名前を入れてね（例：01.rb）"
       menu: "メニュー"
       run: "実行"
+      upload: "アップロード"
       download: "ダウンロード"
       load: "ロード"
       save: "セーブ"

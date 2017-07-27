@@ -62,6 +62,10 @@ Smalruby.SourceCode = Backbone.Model.extend({
     return this.post_('');
   },
 
+  upload: function() {
+    return this.post_('upload');
+  },
+
   write: function(force) {
     if (force == null) {
       force = false;

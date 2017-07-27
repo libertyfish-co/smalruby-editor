@@ -61,6 +61,9 @@ Blockly.Msg.VIEWS_MAIN_MENU_VIEW_SAVE_BLOCKUI_NOTICE = 'Your program name is "{$
 Blockly.Msg.VIEWS_MAIN_MENU_VIEW_SAVE_ERROR_MESSAGE = "Can't save your program.";
 Blockly.Msg.VIEWS_MAIN_MENU_VIEW_SAVE_CANCELED = 'Canceled to save.';
 Blockly.Msg.VIEWS_MAIN_MENU_VIEW_SAVE_SUCCEEDED = 'Saved.';
+Blockly.Msg.VIEWS_MAIN_MENU_VIEW_UPLOAD_ERROR_MESSAGE = "Can't upload your program.";
+Blockly.Msg.VIEWS_MAIN_MENU_VIEW_UPLOAD_CANCELED = 'Canceled to upload.';
+Blockly.Msg.VIEWS_MAIN_MENU_VIEW_UPLOAD_SUCCEEDED = 'Uploaded.';
 
 Blockly.Msg.VIEWS_MAIN_MENU_VIEW_CHECK_BLOCKUI_TITLE = 'Checking your program';
 Blockly.Msg.VIEWS_MAIN_MENU_VIEW_CHECK_BLOCKUI_MESSAGE = 'Now, checking syntax of your program.';

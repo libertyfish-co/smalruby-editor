@@ -64,6 +64,9 @@ Blockly.Msg.VIEWS_MAIN_MENU_VIEW_SAVE_BLOCKUI_NOTICE = 'プログラムの名前
 Blockly.Msg.VIEWS_MAIN_MENU_VIEW_SAVE_ERROR_MESSAGE = 'セーブできませんでした';
 Blockly.Msg.VIEWS_MAIN_MENU_VIEW_SAVE_CANCELED = 'セーブをキャンセルしました';
 Blockly.Msg.VIEWS_MAIN_MENU_VIEW_SAVE_SUCCEEDED = 'セーブしました';
+Blockly.Msg.VIEWS_MAIN_MENU_VIEW_UPLOAD_ERROR_MESSAGE = 'アップロードできませんでした';
+Blockly.Msg.VIEWS_MAIN_MENU_VIEW_UPLOAD_CANCELED = 'アップロードをキャンセルしました';
+Blockly.Msg.VIEWS_MAIN_MENU_VIEW_UPLOAD_SUCCEEDED = 'アップロードしました';
 
 Blockly.Msg.VIEWS_MAIN_MENU_VIEW_CHECK_BLOCKUI_TITLE = 'プログラムのチェック中';
 Blockly.Msg.VIEWS_MAIN_MENU_VIEW_CHECK_BLOCKUI_MESSAGE = 'プログラムの文法をチェックしています。';

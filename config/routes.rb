@@ -23,6 +23,7 @@ SmalrubyEditor::Application.routes.draw do
   delete 'source_codes/write'
   post 'source_codes/run'
   post 'source_codes/to_blocks'
+  post 'source_codes/upload'
 
   get 'preferences', to: 'users#preferences'
   get 'toolbox', to: 'editor#toolbox'

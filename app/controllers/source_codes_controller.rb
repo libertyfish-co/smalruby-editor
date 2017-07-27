@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 require 'nkf'
+require 'net/ftp'
 
 class SourceCodesController < ApplicationController
   before_filter :check_whether_standalone, only: [:write, :run, :load_local]
@@ -60,6 +61,28 @@ class SourceCodesController < ApplicationController
   rescue => e
     res[:source_code][:error] = e.message
     render json: res
+  end
+
+  def upload
+    filename = source_code_params[:filename]
+    program_path = local_program_paths.find { |path|
+      path.basename.to_s == filename
+    }
+
+    info = {
+        filename: filename
+    }
+
+    begin
+      Net::FTP.open(ENV["FTP_SERVER"], ENV["FTP_CLIENT"], ENV["FTP_PASSWORD"]) do |client|
+        client.put(program_path)
+      end
+    rescue
+      info[:error] = I18n.t('.upload_failed',
+                            scope: 'controllers.source_codes')
+    end
+
+    render json: { source_code: info }, content_type: request.format
   end
 
   def load
