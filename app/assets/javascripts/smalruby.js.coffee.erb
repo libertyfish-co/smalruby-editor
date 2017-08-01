@@ -68,6 +68,8 @@ window.Smalruby =
       el: $('#reset-modal')
     @Views.PreferenceModalView = new Smalruby.PreferenceModalView
       el: $('#preference-modal')
+    @Views.UploadModalView = new Smalruby.UploadModalView
+      el: $('#upload-modal')
 
     Smalruby.downloading = false
     window.onbeforeunload = (event) ->

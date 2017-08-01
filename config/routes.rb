@@ -24,7 +24,10 @@ SmalrubyEditor::Application.routes.draw do
   post 'source_codes/run'
   post 'source_codes/to_blocks'
   post 'source_codes/upload'
+  post 'source_codes/send_passcode'
 
   get 'preferences', to: 'users#preferences'
   get 'toolbox', to: 'editor#toolbox'
+
+  #resources :passcodes, only: [:create]
 end

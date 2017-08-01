@@ -140,6 +140,9 @@ class SourceCodesController < ApplicationController
     end
   end
 
+  def send_passcode
+  end
+
   private
 
   def source_code_params

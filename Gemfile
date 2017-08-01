@@ -45,6 +45,10 @@ gem 'settingslogic'
 
 gem 'acts-as-taggable-on', '~> 3.4'
 
+gem 'dxruby_sdl'
+
+gem 'rubysdl'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

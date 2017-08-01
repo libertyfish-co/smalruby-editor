@@ -213,18 +213,15 @@ Smalruby.MainMenuView = Backbone.View.extend
 
     sourceCode.save2()
       .then (data) ->
-      sourceCode.write()
+        sourceCode.write()
       .then (data) =>
-      @confirmOverwrite_.call @, data, sourceCode, ->
-        errorMsg = <%= bm('.upload_canceled') %>
+        @confirmOverwrite_.call @, data, sourceCode, ->
+          errorMsg = <%= bm('.upload_canceled') %>
       .then(@unblockUI, @unblockUI)
       .done ->
-      sourceCode.upload()
-      Smalruby.savedFilename = sourceCode.get('filename')
-      window.changed = false
-      window.successMessage(<%= bm('.upload_succeeded') %>)
+        Smalruby.Views.UploadModalView.render()
       .fail ->
-      window.errorMessage(<%= bm('.upload_error_message') %>)
+        window.errorMessage(<%= bm('.upload_error_message') %>)
 
   onSave: (e) ->
     e.preventDefault()

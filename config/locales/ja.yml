@@ -7,6 +7,8 @@ ja:
     login: &login "ログイン"
     name: "名前"
     processing: "処理中"
+    upload: "アップロード"
+    passcode: "パスコード"
 
   controllers:
     source_codes:
@@ -92,6 +94,9 @@ ja:
     reset_modal:
       title: "本当にリセットしますか？"
       message: "作成中のプログラムが消えてしまうよ！"
+
+    upload_modal:
+      title: "パスコードを入力してください"
 
     preference_modal:
       title: "設定"

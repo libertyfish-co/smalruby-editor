@@ -7,6 +7,8 @@ en:
     login: &login "Login"
     name: "Name"
     processing: "Processing..."
+    upload: "Upload"
+    passcode: "PassCode"
 
   controllers:
     source_codes:
@@ -91,6 +93,9 @@ en:
     reset_modal:
       title: "Are you sure you want to reset ?"
       message: "Your program will disappear!"
+
+    upload_modal:
+      title: "Please enter a passcode"
 
     preference_modal:
       title: "Preference"

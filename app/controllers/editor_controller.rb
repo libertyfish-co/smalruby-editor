@@ -3,6 +3,7 @@ require "ostruct"
 
 class EditorController < ApplicationController
   def index
+    @passcode = Passcode.new
   end
 
   def demo
