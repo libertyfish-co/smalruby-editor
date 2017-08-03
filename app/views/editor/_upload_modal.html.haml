@@ -1,16 +1,20 @@
 #upload-modal{class: "#{modal_css_class}", tabindex: "-1",
              role: "dialog", :"aria-hidden" => "true"}
-  .modal-header
-    %h3
-      = t('.title')
   .modal-body
-    #form_id
-      = form_tag 'source_codes/send_passcode', remote: true, method: 'post' do
-        = text_field_tag :code
-        #upload-modal-send-button
-          = submit_tag t('common.upload')
+    %h4
+      %i.icon-upload
+      = t('.title')
+    %form#upload-modal-form.form-horizontal
+      .control-group
+        %label.control-label
+          = t('common.passcode')
+        .controls
+          %input.input-large{name: "passcode", type: "text"}
 
   .modal-footer
     %button#upload-modal-cancel-button.btn{:"data-dismiss" => "modal", :"aria-hidden" => "true"}<
       %i.icon-remove
       = t('common.cancel')
+    %button#upload-modal-upload-button{:class => "btn btn-primary", :"data-dismiss" => "modal", :"aria-hidden" => "true"}<
+      %i.icon-upload
+      = t('common.upload')
