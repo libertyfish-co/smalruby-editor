@@ -219,7 +219,7 @@ Smalruby.MainMenuView = Backbone.View.extend
           errorMsg = <%= bm('.upload_canceled') %>
       .then(@unblockUI, @unblockUI)
       .done ->
-        Smalruby.Views.UploadModalView.render()
+        Smalruby.Views.UploadModalView.setSourceCode(sourceCode).render()
       .fail ->
         window.errorMessage(<%= bm('.upload_error_message') %>)
 

@@ -70,7 +70,7 @@ class SourceCodesController < ApplicationController
     }
 
     info = {
-        filename: filename
+        filename: filename.sub(/\.xml\z/, '')
     }
 
     begin

@@ -9,7 +9,10 @@ Smalruby.UploadModalView = Backbone.View.extend
   render: ->
     @$el.modal
       backdrop: 'static'
-    @$el.modal('show')
+
+  setSourceCode: (sourceCode)->
+    @sourceCode = sourceCode
+    @
 
   onUpload: (e) ->
     $.ajax
@@ -17,7 +20,7 @@ Smalruby.UploadModalView = Backbone.View.extend
       type: 'POST'
       data:
         source_code:
-          filename: "hogehoge"
+          filename: @sourceCode.getRbxmlFilename()
       dataType: 'json'
       success: (data, textStatus, jqXHR) ->
         Smalruby.Views.MainMenuView.load(data.source_code)
